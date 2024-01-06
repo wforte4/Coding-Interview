@@ -1,0 +1,54 @@
+{
+  "extends": [
+    "airbnb",
+    "eslint:recommended",
+    "plugin:@typescript-eslint/recommended",
+    "plugin:import/warnings"
+  ],
+  "rules": {
+    "quotes": ["error", "single"],
+    "block-spacing": "error",
+    "@typescript-eslint/block-spacing": "error",
+    "object-curly-spacing": ["error", "always"],
+    "@typescript-eslint/no-namespace": "off",
+    "import/prefer-default-export": "off",
+    "import/no-relative-packages": "off",
+    "import/extensions": "off",
+    "no-underscore-dangle": "off",
+    "consistent-return": "off",
+    "arrow-spacing": "error",
+    "space-before-blocks": "error",
+    "keyword-spacing": ["error", { "before": true, "after": true }],
+    "no-multiple-empty-lines": ["error", { "max": 1, "maxEOF": 0 }],
+    "max-len": ["error", { "code": 150 }],
+    "no-shadow": "off",
+    "@typescript-eslint/no-shadow": "error",
+    "brace-style": "error",
+    "jsx-quotes": [2, "prefer-single"],
+    "indent": ["error", 2],
+    "semi": [2, "always"],
+    "import/order": [
+        "error",
+        {
+          "groups": [
+            "index",
+            "parent",
+            "internal",
+            "external",
+            "builtin",
+            "object",
+            "type",
+            "sibling"
+          ]
+        }
+    ]
+  },
+  "settings": {
+    "import/resolver": {
+      "node": {
+        "extensions": [".ts", ".js"],
+        "moduleDirectory": ["node_modules", "src/"]
+      }
+    }
+  }
+}

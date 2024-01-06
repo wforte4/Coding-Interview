@@ -1,0 +1,20 @@
+{
+  "ts-node": {
+    "require": ["tsconfig-paths/register"]
+  },
+  "include": ["src", "src/**/*.ts", "**/*.ts"],
+  "exclude": ["node_modules", "**/*.spec.ts", "build"],
+  "compilerOptions": {
+    "moduleResolution": "node",
+    "target": "es6",
+    "module": "commonjs",
+    "strict": true,
+    "esModuleInterop": true,
+    "composite": true,
+    "baseUrl": "./src", 
+    "outDir": "build",
+    "skipLibCheck": true,
+    "allowSyntheticDefaultImports": true,
+    "importHelpers": true,
+  }
+}
