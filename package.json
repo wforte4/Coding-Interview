@@ -1,0 +1,19 @@
+{
+  "name": "coding-interview",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/wforte4/coding-interview.git",
+  "author": "William Forte <wforte6@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "husky": "^8.0.0"
+  },
+  "scripts": {
+    "prepare": "husky install",
+    "lint:app": "cd ./app && yarn lint",
+    "lint:api": "cd ./api && yarn lint"
+  },
+  "dependencies": {
+    "ttab": "^0.8.0"
+  }
+}
