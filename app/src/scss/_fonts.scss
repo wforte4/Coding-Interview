@@ -1,0 +1,21 @@
+@mixin header {
+    font-family: 'Inter', sans-serif;
+    font-size: 21px;
+    margin: 0;
+    padding: 0;
+    font-weight: 400;
+}
+
+@mixin paragraph {
+  font-family: 'Inter', Arial, sans-serif;
+  font-size: 14px;
+  font-weight: 300;
+}
+
+@mixin button {
+    font-family: 'Helvetica', Arial, sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 13px;
+    line-height: 14px;
+}

@@ -1,0 +1,63 @@
+@import 'src/scss/index';
+
+.label {
+  font-family: 'Helvetica', 'Arial', sans-serif;
+  font-size: 14px;
+}
+
+.input {
+  margin: 8px 0;
+  margin-bottom: 4px;
+  padding: 16px;
+  width: 100%;
+  box-sizing: border-box;
+  border-radius: 36px;
+  border: 2px solid lightgray;    
+  font-family: 'Helvetica', 'Arial', sans-serif;
+  font-size: 14px;
+  transition: border 150ms ease;
+
+  &:focus, &:focus-visible, &:focus-within {
+    border: 2px solid $green;
+    outline: none;
+  }
+
+  &--error {
+    border: 2px solid $red;  
+    
+    &:focus, &:focus-visible, &:focus-within {
+      border: 2px solid $red;  
+    }
+  }
+
+}
+
+.inputcontainer {
+  width: 100%;
+  position: relative;
+
+  &:hover {
+    & .showPassword {
+      display: block;
+    }
+  }
+
+  & .showPassword {
+    display: none;
+    position: absolute;
+    right: 16px;
+    top: 50%;
+    translate: 0 calc(-50% + 8px);
+
+    & img {
+      width: 20px;
+      height: 20px;
+    }
+  }
+}
+
+.validationErrorMessage {
+  @include paragraph;
+  color: $red;
+  font-size: 10px;
+}
